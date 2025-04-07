@@ -1,0 +1,23 @@
+
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    networks:
+      - webnet
+
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - backend
+    networks:
+      - webnet
+
+networks:
+  webnet:
