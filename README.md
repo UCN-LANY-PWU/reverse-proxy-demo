@@ -14,8 +14,7 @@ Dette er et komplet eksempelprojekt med **frontend**, **backend**, og en **rever
 
 ### ▶️ Sådan kører du det:
 
-1. Pak ud og åbn en terminal i mappen
-2. Kør:
+1. Kør:
    ```bash
    docker-compose up --build
    ```
@@ -23,7 +22,3 @@ Dette er et komplet eksempelprojekt med **frontend**, **backend**, og en **rever
    Du ser:
    - "Hello from the frontend!"
    - Og: "Hello from the backend!" hentet via `/api`
-
----
-
-Sig til, hvis du vil have versioner med Vue/React frontend, eller hvis det skal bruges i en øvelse.
